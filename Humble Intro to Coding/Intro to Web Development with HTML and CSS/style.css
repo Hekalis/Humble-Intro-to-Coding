@@ -1,7 +1,15 @@
-.Veg {
-    color: green;
-}
-
-.Meat {
-    color: brown;
-}
+body {
+    font-size: 20px;
+  }
+  
+  p {
+    font-size: 2rem;
+    /*Use the Google font*/
+    font-family: 'Goldman', cursive; 
+  }
+  
+  .keypoint {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+  }
