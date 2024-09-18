@@ -1,0 +1,32 @@
+#:kivy 2.3.0
+
+<GameScreen>:
+    canvas:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: root.x, root.y
+            size: root.width, root.height
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: root.x + 5, root.y + 5
+            size: root.width - 10, root.height - 10
+    FloatLayout:
+        pos: 0, 0
+        size: root.width, root.height
+
+        Label:
+            pos_hint: {'x': .1, 'y': .9}
+            size_hint: .8, .1
+            text_size: self.size
+            text: "diamante"
+            font_size: 60
+            bold: True
+            color: 0, 0, 0, 1
+
+        GridLayout:
+            pos_hint: {'x': .1, 'y': .25}
+            size_hint: None, None
+            size: root.width * .8, root.width * .8
+            cols: 2
